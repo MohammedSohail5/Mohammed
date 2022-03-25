@@ -1,0 +1,135 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav opened="true" mode="side" width="00px">
+    <mat-nav-list>
+
+      <a mat-list-item class="item1">1</a>
+      <a mat-list-item class="item2">2</a>
+      <a mat-list-item class="item1">3</a>
+      <a mat-list-item class="item2">4</a>
+      <a mat-list-item class="item1">5</a>
+      <a mat-list-item class="item2">6</a>
+      <a mat-list-item class="item1">7</a>
+      <a mat-list-item class="item2">8</a>
+      <a mat-list-item class="item1">9</a>
+      <a mat-list-item class="item2">10</a>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <header class="header">
+      <div class="header-item">
+          <a class="block-element">Item: 2 0f 10
+            <span>Block: 1 of 1</span>
+          </a>
+          <a mat-button>
+
+          <mat-checkbox formControlName="mark"></mat-checkbox>
+          <img src="assets/Icons/flag.jpg" alt="" width="15" height="15">Mark
+        </a>
+
+        <a mat-button class="mat-list-base .mat-list-item, .mat-list-base .mat-list-option icon1"><img
+            src="assets/Icons/prev.jpg" alt="" width="15" height="15">
+          Previous
+        </a>
+        <a mat-button class="mat-list-base .mat-list-item, .mat-list-base .mat-list-option icon1"><img
+            src="assets/Icons/next.jpg" alt="" width="15" height="15">
+          Next
+          <div class="flex-spacer"></div>
+        </a>
+        <a mat-button class="mat-list-base .mat-list-item, .mat-list-base .mat-list-option icon"><img
+            src="assets/Icons/lab-ico.jpg" alt="" width="15" height="15">
+          Lab Values
+        </a>
+        <a mat-button class="mat-list-base .mat-list-item, .mat-list-base .mat-list-option icon"><img
+            src="assets/Icons/notes-ico.jpg" alt="" width="15" height="15">
+          Notes
+        </a>
+        <a mat-button class="mat-list-base .mat-list-item, .mat-list-base .mat-list-option icon4"><img
+            src="assets/Icons/cal-ico.jpg" alt="" width="15" height="15">
+          Calculator
+        </a>
+        <a mat-button class="mat-list-base .mat-list-item, .mat-list-base .mat-list-option icon4"><img
+            src="assets/Icons/reverse-ico.jpg" alt="" width="15" height="15">
+          Reverse Color
+        </a>
+        <a mat-button class="mat-list-base .mat-list-item, .mat-list-base .mat-list-option icon"><img
+            src="assets/Icons/text-ico.jpg" alt="" width="15" height="15">
+          Text Zoom
+        </a>
+      </div>
+    </header>
+    <div class="content">
+      <p>
+        A 23-year-old female presents to the office with the complaints of excruciating abdominal pain and
+        lightheadedness.<br>
+        She is sexually active and her last menstrual period was 8 weeks ago. Vital signs reveal
+      </p>
+      <br>
+      <table class="table">
+        <tr>
+          <td>Temperature</td>
+          <td>37.2 C(99.0 F)</td>
+        </tr>
+
+        <tr>
+          <td>Blood Pressure</td>
+          <td>150/90 mmHg</td>
+        </tr>
+
+        <tr>
+          <td>Heart Rate</td>
+          <td>100/min</td>
+        </tr>
+
+        <tr>
+          <td>Respiratory rate</td>
+          <td>18/min</td>
+        </tr>
+      </table>
+
+      <br>
+
+      <p>
+        Physical examination reveals a firm abdoman with involuntary gaurding.<br> There is an adnexal mass and blood at
+        the
+        cervical os.
+      </p>
+
+      <br>
+
+      <p>
+        A pelvic ultrasound will likely reveal a
+      </p>
+
+      <br>
+
+
+      <mat-radio-group aria-label="Select an option" class="option-item">
+        <mat-radio-button value="1">A. complex mass in the fallopian tube</mat-radio-button><br>
+        <mat-radio-button value="2">B. decrease in blood flow to the ovary</mat-radio-button><br>
+        <mat-radio-button value="2">C. hypoechoic mass in the ovary</mat-radio-button><br>
+        <mat-radio-button value="2">D. solid mass in the ovary</mat-radio-button>
+      </mat-radio-group>
+
+      <br>
+    </div>
+    <footer class="footer">
+      <div class="footer-item">
+        <span>Block Time Remaining 00.13.52
+          <br>
+          Day Time Remaining 00.13.52
+        </span>
+        <a mat-button class="icon2"><img src="assets/Icons/lock-ico.jpg" alt="" width="15" height="15">
+          Lock
+        </a>
+        <a mat-button class="icon3"><img src="assets/Icons/red-ico.jpg" alt="" width="15" height="15">
+          End Block
+        </a>
+      </div>
+    </footer>
+
+    <div style="height: 100vh;">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
